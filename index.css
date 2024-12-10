@@ -64,7 +64,8 @@
 }
 
 html {
-  font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+  font-size: 62.5%;
+  /* (16/10)*100 = 62.5% => 1rem = 10px */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -654,7 +655,8 @@ body:not(.user-is-tabbing) a:focus {
 .team-member img {
   width: 100%;
   height: auto;
-  border-radius: 50%; /* Circular profile pictures */
+  border-radius: 50%;
+  /* Circular profile pictures */
   margin-bottom: var(--gutter-small);
 }
 
@@ -1016,7 +1018,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .filter-btn.active {
-  background-color: var(--orange); /* Highlight active filter */
+  background-color: var(--orange);
+  /* Highlight active filter */
 }
 
 .portfolio__boxes {
@@ -1027,7 +1030,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .portfolio__box {
   margin: 1rem;
-  width: 30%; /* Adjust width as needed */
+  width: 30%;
+  /* Adjust width as needed */
   height: 100%;
   position: relative;
   border-style: solid;
@@ -1040,7 +1044,7 @@ body:not(.user-is-tabbing) a:focus {
   border-style: none;
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
   .portfolio__box {
     height: 450px;
   }
@@ -1048,7 +1052,7 @@ body:not(.user-is-tabbing) a:focus {
   .portfolio__box__iframe {
     height: 420px;
   }
-  
+
   .portfolio__cta {
     width: 100%;
   }
@@ -1057,7 +1061,8 @@ body:not(.user-is-tabbing) a:focus {
 .portfolio__box img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Optional: for rounded corners */
+  border-radius: 8px;
+  /* Optional: for rounded corners */
 }
 
 .portfolio__text {
@@ -1069,7 +1074,8 @@ body:not(.user-is-tabbing) a:focus {
   color: white;
   padding: 1rem;
   text-align: center;
-  border-radius: 0 0 8px 8px; /* Optional: for rounded corners */
+  border-radius: 0 0 8px 8px;
+  /* Optional: for rounded corners */
 }
 
 .portfolio__cta {
