@@ -67,3 +67,42 @@ window.addEventListener("mousemove", (e) => {
     }
   );
 });
+
+// Filter functionality for portfolio projects
+const filterButtons = document.querySelectorAll(".filter-btn");
+const webDevProjects = document.querySelectorAll(".web-development__box");
+const uiUxProjects = document.querySelectorAll(".ui__box");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove active class from all buttons
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    // Add active class to the clicked button
+    button.classList.add("active");
+
+    // Determine which projects to show based on the button clicked
+    if (button.textContent.includes("Web Applications")) {
+      webDevProjects.forEach((project) => {
+        project.style.display = "block"; // Show web development projects
+      });
+      uiUxProjects.forEach((project) => {
+        project.style.display = "none"; // Hide UI/UX projects
+      });
+    } else if (button.textContent.includes("UI/UX")) {
+      webDevProjects.forEach((project) => {
+        project.style.display = "none"; // Hide web development projects
+      });
+      uiUxProjects.forEach((project) => {
+        project.style.display = "block"; // Show UI/UX projects
+      });
+    } else {
+      // If other filters are clicked, show all projects (optional)
+      webDevProjects.forEach((project) => {
+        project.style.display = "block"; // Show all web development projects
+      });
+      uiUxProjects.forEach((project) => {
+        project.style.display = "block"; // Show all UI/UX projects
+      });
+    }
+  });
+});
